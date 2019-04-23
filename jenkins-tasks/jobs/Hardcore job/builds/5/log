@@ -1,0 +1,97 @@
+Started by user [8mha:////4OjNW73pwcMYpeLAWtv1dJZkigIFFXdntcmNyRIyj4HbAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgY+/dLi1CL9pNSc7Py8xBIA0IsVIMMAAAA=[0mbelko
+Building remotely on [8mha:////4MrUmyOz6EEOIGmWA/AxeGT2YkFvTGR4zqMNw6CuujhKAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZh/eT83ILSktQi/aTUnNzECt0AZwDSK5HZyAAAAA==[0mbelmax-PC (x64 win7) in workspace C:\data\slave\workspace\Hardcore job
+No credentials specified
+ > C:\Program Files\Git\cmd\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\cmd\git.exe config remote.origin.url https://github.com/vitalliuss/helloci.git # timeout=10
+Fetching upstream changes from https://github.com/vitalliuss/helloci.git
+ > C:\Program Files\Git\cmd\git.exe --version # timeout=10
+ > C:\Program Files\Git\cmd\git.exe fetch --tags --force --progress https://github.com/vitalliuss/helloci.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\cmd\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 446ae5a4fb9798821be65628da0b587e4e1f04e3 (refs/remotes/origin/master)
+ > C:\Program Files\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\cmd\git.exe checkout -f 446ae5a4fb9798821be65628da0b587e4e1f04e3
+Commit message: "mention cobertura issue in README"
+ > C:\Program Files\Git\cmd\git.exe rev-list --no-walk 446ae5a4fb9798821be65628da0b587e4e1f04e3 # timeout=10
+[Hardcore job] $ cmd.exe /C "C:\data\slave\tools\hudson.tasks.Maven_MavenInstallation\C_apache-maven-3.6.0_\bin\mvn.cmd -f Java/pom.xml clean cobertura:cobertura && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.github.vitalliuss.helloci:hello-ci >---------------
+[INFO] Building hello-ci 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4DQ+BZyzg1OG1Y8ElKXLx0HAPHa1gMpFlsmcRZhYCDmpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ hello-ci ---
+[INFO] Deleting C:\data\slave\workspace\Hardcore job\Java\target
+[INFO] 
+[INFO] >>> cobertura-maven-plugin:2.7:cobertura (default-cli) > [cobertura]test @ hello-ci >>>
+[INFO] 
+[8mha:////4DQ+BZyzg1OG1Y8ElKXLx0HAPHa1gMpFlsmcRZhYCDmpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hello-ci ---
+[8mha:////4MKEDFKeFn1JhCoRY1QDGnMwgB9Rxoquxb3mCseTryviAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\data\slave\workspace\Hardcore job\Java\src\main\resources
+[INFO] 
+[8mha:////4DQ+BZyzg1OG1Y8ElKXLx0HAPHa1gMpFlsmcRZhYCDmpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ hello-ci ---
+[INFO] Changes detected - recompiling the module!
+[8mha:////4MKEDFKeFn1JhCoRY1QDGnMwgB9Rxoquxb3mCseTryviAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding Cp1251, i.e. build is platform dependent!
+[INFO] Compiling 2 source files to C:\data\slave\workspace\Hardcore job\Java\target\classes
+[INFO] 
+[8mha:////4DQ+BZyzg1OG1Y8ElKXLx0HAPHa1gMpFlsmcRZhYCDmpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- cobertura-maven-plugin:2.7:instrument (default-cli) @ hello-ci ---
+[INFO] Cobertura 2.1.1 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
+[INFO] Cobertura: Saved information on 2 classes.
+[INFO] Cobertura: Saved information on 2 classes.
+
+[INFO] Instrumentation was successful.
+[INFO] NOT adding cobertura ser file to attached artifacts list.
+[INFO] 
+[8mha:////4DQ+BZyzg1OG1Y8ElKXLx0HAPHa1gMpFlsmcRZhYCDmpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hello-ci ---
+[8mha:////4MKEDFKeFn1JhCoRY1QDGnMwgB9Rxoquxb3mCseTryviAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (Cp1251 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\data\slave\workspace\Hardcore job\Java\src\test\resources
+[INFO] 
+[8mha:////4DQ+BZyzg1OG1Y8ElKXLx0HAPHa1gMpFlsmcRZhYCDmpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ hello-ci ---
+[INFO] Changes detected - recompiling the module!
+[8mha:////4MKEDFKeFn1JhCoRY1QDGnMwgB9Rxoquxb3mCseTryviAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding Cp1251, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to C:\data\slave\workspace\Hardcore job\Java\target\test-classes
+[INFO] 
+[8mha:////4DQ+BZyzg1OG1Y8ElKXLx0HAPHa1gMpFlsmcRZhYCDmpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ hello-ci ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.github.vitalliuss.helloci.AppTest
+[8mha:////4EGrtnZVCuauJyvmvjsPGSZmPcpv2ldx5OeH1BgJ1g53AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.564 s <<< FAILURE! - in com.github.vitalliuss.helloci.AppTest
+[8mha:////4EGrtnZVCuauJyvmvjsPGSZmPcpv2ldx5OeH1BgJ1g53AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] testShouldBeFailed(com.github.vitalliuss.helloci.AppTest)  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.github.vitalliuss.helloci.AppTest.testShouldBeFailed(AppTest.java:21)
+
+[INFO] Cobertura: Loaded information on 2 classes.
+[INFO] Cobertura: Saved information on 2 classes.
+[INFO] 
+[INFO] Results:
+[INFO] 
+[8mha:////4EGrtnZVCuauJyvmvjsPGSZmPcpv2ldx5OeH1BgJ1g53AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failures: 
+[8mha:////4EGrtnZVCuauJyvmvjsPGSZmPcpv2ldx5OeH1BgJ1g53AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   AppTest.testShouldBeFailed:21
+[INFO] 
+[8mha:////4EGrtnZVCuauJyvmvjsPGSZmPcpv2ldx5OeH1BgJ1g53AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 1
+[INFO] 
+[8mha:////4EGrtnZVCuauJyvmvjsPGSZmPcpv2ldx5OeH1BgJ1g53AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] There are test failures.
+
+Please refer to C:\data\slave\workspace\Hardcore job\Java\target\surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[INFO] 
+[INFO] <<< cobertura-maven-plugin:2.7:cobertura (default-cli) < [cobertura]test @ hello-ci <<<
+[INFO] 
+[INFO] 
+[8mha:////4DQ+BZyzg1OG1Y8ElKXLx0HAPHa1gMpFlsmcRZhYCDmpAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- cobertura-maven-plugin:2.7:cobertura (default-cli) @ hello-ci ---
+[INFO] Cobertura 2.1.1 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
+[INFO] Cobertura: Loaded information on 2 classes.
+Report time: 123ms
+
+[INFO] Cobertura Report generation was successful.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.337 s
+[INFO] Finished at: 2019-02-03T23:19:23+03:00
+[INFO] ------------------------------------------------------------------------
+Archiving artifacts
+Finished: SUCCESS
